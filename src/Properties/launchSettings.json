@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PowerSearch (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "PowerSearch (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
