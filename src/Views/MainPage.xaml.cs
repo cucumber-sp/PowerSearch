@@ -1,18 +1,19 @@
-namespace PowerSearch.Views
+namespace PowerSearch.Views;
+
+/// <summary>
+///     A simple page that can be used on its own or navigated to within a Frame.
+/// </summary>
+public partial class MainPage : Page
 {
-    /// <summary>
-    /// A simple page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public partial class MainPage : Page
+    int count;
+
+    public MainPage()
     {
-        int count = 0;
+        InitializeComponent();
+    }
 
-        public MainPage()
-        {
-            this.InitializeComponent();
-        }
-
-        private void OnCountClicked(object sender, RoutedEventArgs e)
-            => txtCount.Text = $"Current count: {count++}";
+    void OnCountClicked(object sender, RoutedEventArgs e)
+    {
+        txtCount.Text = $"Current count: {count++}";
     }
 }
